@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class MarkingScheme {
+	
+		// Name: Vriti Dahiya
+		// Date: April 21, 2023
+		// Purpose: To write a program to convert the user's numeric mark to a level.
+	
+		
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		//Input: Ask for mark
+		//*********************//
+		System.out.println ("Enter your mark in numbers:");
+		double mark = input.nextDouble();
+		
+
+		//Generate Level from Numeric Mark
+		//*******************//
+			if  (mark<0){
+				System.out.println ("Your mark can't be less than 0. Please re-enter your correct mark.");
+		}
+		
+			else if (mark<50){
+				System.out.println ("You're at a level R.");
+		}	
+		
+			else if (mark<60){
+				System.out.println ("You're at a level 1.");
+		}
+		
+			else if (mark<70){
+				System.out.println ("You're at a level 2.");
+		}
+		
+			else if (mark<80){
+				System.out.println ("You're at a level 3.");	
+		}
+		
+			else if (mark<=100){
+				System.out.println ("You're at a level 4.");	
+		}
+		
+			else if (mark>100){
+				System.out.println ("Your mark can't be over 100. Please re-enter your correct mark.");
+		}
+			
+		
+		
+	}//main
+
+}//MarkingScheme
